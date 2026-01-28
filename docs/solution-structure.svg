@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .label { font: 600 18px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #0f172a; }
+      .mono { font: 16px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; fill: #0f172a; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .line { stroke: #94a3b8; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="600" fill="#f1f5f9" />
+
+  <rect x="60" y="110" width="520" height="420" class="box" />
+  <text x="90" y="215" class="label">Backend</text>
+  <text x="90" y="250" class="mono">Backend/</text>
+  <text x="90" y="280" class="mono">├─ UserManagement.API/</text>
+  <text x="90" y="310" class="mono">│  ├─ Controllers/</text>
+  <text x="90" y="340" class="mono">│  ├─ Data/</text>
+  <text x="90" y="370" class="mono">│  ├─ Models/</text>
+  <text x="90" y="400" class="mono">│  ├─ DTOs/</text>
+  <text x="90" y="430" class="mono">│  ├─ Services/</text>
+  <text x="90" y="460" class="mono">│  └─ Middleware/</text>
+  <text x="90" y="490" class="mono">└─ UserManagment.Test/</text>
+
+  <rect x="620" y="110" width="520" height="420" class="box" />
+  <text x="650" y="215" class="label">Frontend</text>
+  <text x="650" y="250" class="mono">Frontend/</text>
+  <text x="650" y="280" class="mono">├─ src/</text>
+  <text x="650" y="310" class="mono">│  ├─ pages/</text>
+  <text x="650" y="340" class="mono">│  ├─ components/</text>
+  <text x="650" y="370" class="mono">│  └─ service/</text>
+  <text x="650" y="400" class="mono">└─ .env</text>
+
+  <line x1="580" y1="320" x2="620" y2="320" class="line" />
+</svg>

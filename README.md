@@ -11,22 +11,7 @@ The API manages **Users**, **Groups**, and **Permissions** (CRUD + many-to-many 
 
 
 .
-├─ Backend/
-│  ├─ UserManagement.API/               # ASP.NET Core Web API
-│  │  ├─ Controllers/                   # HTTP endpoints (Users, Groups, Permissions, Dashboard)
-│  │  ├─ Data/                          # EF Core DbContext
-│  │  ├─ Models/                        # Domain entities
-│  │  ├─ DTOs/                          # API contracts
-│  │  ├─ Services/                      # Business logic
-│  │  ├─ Interfaces/                    # Service abstractions
-│  │  └─ Middleware/                    # Exception + API key middleware
-│  └─ UserManagment.Test/               # xUnit tests
-└─ Frontend/                            # React + Vite client
-   ├─ src/
-   │  ├─ pages/                         # Route pages
-   │  ├─ components/                    # UI components
-   │  └─ service/                       # Axios client + API calls
-   └─ .env                              # Frontend API configuration
+![Solution structure](docs/solution-structure.svg)
 
 
 ## Key technical decisions
@@ -46,17 +31,114 @@ The API manages **Users**, **Groups**, and **Permissions** (CRUD + many-to-many 
 - **Frontend: React + TypeScript + Vite**
   - Vite for fast dev server/build.
   - Axios instance (`Frontend/src/service/api.ts`) uses `.env` for base URL and token.
+  - Tailwind CSS for styling using Shadcn UI components.
 - **CORS explicitly configured**
   - Backend allows the configured frontend origin (`Frontend:Origin` in `appsettings.json`).
 
 ------------------------------------------------------------------------------
-## How to run locally
+
 
 ### Prerequisites
 
 - **.NET SDK 8**
 - **Node.js** (recommended: latest LTS)
 - **SQL Server / LocalDB** (the default config uses `(localdb)\\MSSQLLocalDB`)
+
+### Packages
+
+#### Backend (`UserManagement.API`)
+
+```
+FluentAssertions 8.8.0
+Microsoft.AspNetCore.Mvc.Testing 8.0.23
+Microsoft.EntityFrameworkCore.Design 8.0.23
+Microsoft.EntityFrameworkCore.InMemory 8.0.23
+Microsoft.EntityFrameworkCore.Sqlite 8.0.23
+Microsoft.EntityFrameworkCore.SqlServer 8.0.23
+Microsoft.EntityFrameworkCore.Tools 8.0.23
+Moq 4.20.72
+```
+
+#### Backend tests (`UserManagment.Test`)
+
+```
+coverlet.collector 6.0.0
+Microsoft.EntityFrameworkCore 8.0.23
+Microsoft.NET.Test.Sdk 17.8.0
+Moq 4.20.72
+xunit 2.5.3
+xunit.runner.visualstudio 2.5.3
+```
+
+#### Frontend (`Frontend`)
+
+```
+react ^19.2.0
+react-dom ^19.2.0
+react-router-dom ^7.13.0
+axios ^1.13.4
+vite ^7.2.4
+tailwindcss ^4.1.18
+```
+
+
+## How to run locally
+
+
+### Database migrations
+
+Entity Framework Core migrations are used to keep the database schema in sync with the code in `Models/` and the `AppDbContext`.
+
+An initial migration already exists in `Backend/UserManagement.API/Migrations` (e.g. `20260126202452_InitialCreate`).
+
+Before running migrations:
+
+- Make sure your connection string is correct in `Backend/UserManagement.API/appsettings.json` (`ConnectionStrings:DefaultConnection`).
+- If the `dotnet ef` command is not available, install the EF CLI tool:
+
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+#### Apply migrations / create the database (CLI)
+
+Run this from the repository root:
+
+```bash
+dotnet ef database update --project .\Backend\UserManagement.API\UserManagement.API.csproj --startup-project .\Backend\UserManagement.API\UserManagement.API.csproj
+```
+
+#### Create a new migration (CLI)
+
+Run this from the repository root:
+
+```bash
+dotnet ef migrations add <MigrationName> --project .\Backend\UserManagement.API\UserManagement.API.csproj --startup-project .\Backend\UserManagement.API\UserManagement.API.csproj
+```
+
+#### Visual Studio (Backend)
+
+Running the API:
+
+- Set **UserManagement.API** as the **Startup Project**.
+- Select the **https** (or **http**) run profile.
+- Press **F5** (or **Ctrl+F5**) to start the API.
+
+Running migrations in Visual Studio (Package Manager Console):
+
+- Open **Tools** -> **NuGet Package Manager** -> **Package Manager Console**.
+- Set **Default project** to **UserManagement.API**.
+- Run:
+
+```powershell
+Update-Database
+```
+
+To create a migration:
+
+```powershell
+Add-Migration <MigrationName>
+```
 
 ### 1) Run the backend (API)
 
@@ -121,5 +203,5 @@ npm run build
 - `GET /api/dashboard`
 
 
-## NB postman files are located in the Backend/Postman Collection for testing
+## NB! postman files are located in the Backend/Postman Collection for testing
 
