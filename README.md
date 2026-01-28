@@ -13,27 +13,50 @@ The API manages **Users**, **Groups**, and **Permissions** (CRUD + many-to-many 
 .
 ![Solution structure](docs/solution-structure.svg)
 
-
+ 
 ## Key technical decisions
 
 - **Backend: ASP.NET Core (.NET 8)**
-  - Chosen for fast development of REST endpoints, strong ecosystem, and easy testing.
-- **Data access: Entity Framework Core**
-  - Used to model relationships (including many-to-many) and keep persistence logic consistent.
-  - Configured to use SQL Server by default via `DefaultConnection`.
+  - Provides a clean way to expose REST endpoints via controllers and integrates well with DI, logging, and middleware.
+- **Data access: Entity Framework Core (EF Core)**
+  - EF Core models the domain (Users, Groups, Permissions) and handles the many-to-many relationships consistently.
+  - The application is configured for SQL Server via `ConnectionStrings:DefaultConnection` (in `appsettings.json`).
+- **DTOs for API contracts**
+  - DTOs keep the API payloads stable and avoid directly exposing EF entities over the wire.
 - **Service layer + interfaces**
-  - Controllers delegate to `IUserService`, `IGroupService`, `IPermissionService`, `IDashboardService` to keep controllers thin and testable.
+  - Controllers stay thin by delegating to `IUserService`, `IGroupService`, `IPermissionService`, `IDashboardService`.
+  - This improves separation of concerns and makes business logic easier to test.
 - **API key protection (simple auth)**
-  - A lightweight middleware (`ApiKeyMiddleware`) checks the `Authorization` header:
+  - `ApiKeyMiddleware` enforces a simple header-based API key on every request:
     - `Authorization: Bearer Assessment2026key`
+  - This is lightweight and suitable for an assessment/demo environment.
 - **Centralized exception handling**
-  - `ExceptionMiddleware` catches unhandled exceptions and returns a JSON error response.
+  - `ExceptionMiddleware` catches unhandled exceptions and returns a consistent JSON response, keeping controllers simpler.
 - **Frontend: React + TypeScript + Vite**
-  - Vite for fast dev server/build.
-  - Axios instance (`Frontend/src/service/api.ts`) uses `.env` for base URL and token.
-  - Tailwind CSS for styling using Shadcn UI components.
+  - TypeScript improves maintainability and helps catch common UI integration errors early.
+  - Vite is used for a fast dev server and predictable builds.
+  - Axios is configured centrally (`Frontend/src/service/api.ts`) and reads API settings from `Frontend/.env`.
+  - Tailwind CSS is used for styling and aligns well with component-driven UI (Radix/shadcn-style patterns).
 - **CORS explicitly configured**
-  - Backend allows the configured frontend origin (`Frontend:Origin` in `appsettings.json`).
+  - The backend only allows the configured frontend origin (`Frontend:Origin` in `appsettings.json`) to prevent unintended cross-origin access.
+
+### Testing approach (why it’s done this way)
+
+Testing is split into **UnitTests** and **IntegrationTests** to balance fast feedback with realistic database behavior:
+
+- **Unit tests (fast, focused on business rules)**
+  - Located in `Backend/UserManagment.Test/UnitTests/*_U.cs`.
+  - Use EF Core **InMemory** with a unique database name per test class (`Guid.NewGuid().ToString()`) to keep tests isolated and repeatable.
+  - Mock `ILogger<T>` using **Moq** so tests focus on service logic (validation, CRUD flow) rather than logging.
+  - This keeps unit tests extremely fast and easy to run frequently.
+
+- **Integration tests (closer to real persistence behavior)**
+  - Located in `Backend/UserManagment.Test/IntegrationTests/*_I.cs`.
+  - Use **SQLite in-memory** (`Filename=:memory:` + open connection) with `EnsureCreated()`.
+  - SQLite is relational, so it better reflects real EF Core behavior for relationships (including many-to-many joins) than the InMemory provider.
+  - The open connection keeps the database alive for the duration of each test class, and `Dispose()` cleans up reliably.
+
+This approach gives quick coverage for validation/logic (unit tests) while still validating the EF Core mapping and persistence interactions (integration tests).
 
 ------------------------------------------------------------------------------
 
