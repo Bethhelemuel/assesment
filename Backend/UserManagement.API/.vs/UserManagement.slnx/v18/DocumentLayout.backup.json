@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work\\Assesment\\Backend\\UserManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\services\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:services\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\interfaces\\ipermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:interfaces\\ipermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\dtos\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:dtos\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\dtos\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:dtos\\permissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|c:\\work\\assesment\\backend\\usermanagement\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:52:23.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermissionService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\PermissionService.cs",
+              "RelativeDocumentMoniker": "Services\\PermissionService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\PermissionService.cs",
+              "RelativeToolTip": "Services\\PermissionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:52:06.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\GroupService.cs",
+              "RelativeDocumentMoniker": "Services\\GroupService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\GroupService.cs",
+              "RelativeToolTip": "Services\\GroupService.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAowKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:51:59.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:51:49.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:21:56.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GroupsController.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "Controllers\\GroupsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:22:06.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PermissionsController.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\PermissionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PermissionsController.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Controllers\\PermissionsController.cs",
+              "RelativeToolTip": "Controllers\\PermissionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:23:48.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:42:55.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPermissionService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IPermissionService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IPermissionService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IPermissionService.cs",
+              "RelativeToolTip": "Interfaces\\IPermissionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:52:36.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGroupService.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IGroupService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IGroupService.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Interfaces\\IGroupService.cs",
+              "RelativeToolTip": "Interfaces\\IGroupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:52:30.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-26T21:48:45.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:17:34.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PermissionDTO.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\PermissionDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\PermissionDTO.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\PermissionDTO.cs",
+              "RelativeToolTip": "DTOs\\PermissionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:16:19.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GroupDTO.cs",
+              "DocumentMoniker": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\GroupDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\GroupDTO.cs",
+              "ToolTip": "C:\\Work\\Assesment\\Backend\\UserManagement\\DTOs\\GroupDTO.cs",
+              "RelativeToolTip": "DTOs\\GroupDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:14:59.926Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
